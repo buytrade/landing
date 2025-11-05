@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
         {/* Copyright */}
         <div className="text-center pt-8 border-t border-white border-opacity-20">
           <p className="text-white text-opacity-60 text-sm">
-            © 2024 BuyTrade. All rights reserved.
+            © 2025 BuyTrade. All rights reserved.
           </p>
         </div>
       </div>
