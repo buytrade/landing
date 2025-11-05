@@ -19,7 +19,7 @@ const EmailSignup: React.FC<Props> = ({ variant = 'inline', placeholder = 'Enter
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
 
-  const API_BASE = (import.meta as any).env?.VITE_API_BASE ?? 'http://localhost:4000'
+  const API_BASE = (import.meta as any).env?.VITE_API_BASE ?? 'https://bt-landing-api.onrender.com'
   if (typeof window !== 'undefined') {
     // debug to help diagnose missing env values in dev
     // eslint-disable-next-line no-console
