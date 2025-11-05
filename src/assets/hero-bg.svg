@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#5b21b6" stop-opacity="0.85" />
+      <stop offset="60%" stop-color="#0f172a" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#020617" stop-opacity="1" />
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend mode="overlay" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g1)"/>
+  <!-- subtle diagonal shapes -->
+  <g opacity="0.08" fill="#fff">
+    <rect x="-200" y="-100" width="900" height="900" transform="rotate(12 0 0)" />
+    <rect x="600" y="-200" width="900" height="900" transform="rotate(-12 0 0)" />
+  </g>
+  <!-- decorative circles -->
+  <g opacity="0.06" fill="#fff">
+    <circle cx="1200" cy="100" r="120" />
+    <circle cx="200" cy="700" r="200" />
+  </g>
+  <!-- optional grain overlay -->
+  <rect width="100%" height="100%" fill="transparent" filter="url(#grain)" opacity="0.03"/>
+</svg>

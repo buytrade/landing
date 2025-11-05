@@ -1,26 +1,25 @@
 import React from 'react'
 import phoneImage from '../assets/phone.png'
+import EmailSignup from './EmailSignup'
+import heroBg from '../assets/hero-bt.png'
 
 const Hero: React.FC = () => {
   return (
     <section
       className="min-h-screen relative overflow-hidden text-white"
       style={{
-        background: `
-          radial-gradient(
-            circle at 25% 15%,
-            rgba(186, 85, 255, 0.6),
-            rgba(30, 0, 60, 1) 70%
-          )
-        `,
+        backgroundImage: `url(${heroBg})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
       }}
     >
       {/* Optional soft glow blur overlay for realism */}
       <div
-        className="absolute inset-0 blur-3xl opacity-40"
+        className="absolute inset-0 blur-3xl opacity-30"
         style={{
           background:
-            'radial-gradient(circle at 25% 15%, rgba(186, 85, 255, 0.5), rgba(30, 0, 60, 1) 70%)',
+            'linear-gradient(180deg, rgba(0,0,0,0.12), rgba(0,0,0,0.45))',
         }}
       ></div>
 
@@ -67,15 +66,8 @@ const Hero: React.FC = () => {
             </p>
 
             {/* Email Signup */}
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto form-border">
-              <input
-                type="email"
-                placeholder="Enter your email address"
-                className="border-none flex-1 px-4 py-3 rounded-lg bg-opacity-20 text-white placeholder-white placeholder-opacity-70 focus:outline-none focus:ring-2 focus:ring-transparent"
-              />
-              <button className="bg-white text-purple-700 px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all duration-300 flex items-center justify-center">
-                <span className="mr-2">Join the waitlist</span>
-              </button>
+            <div className="flex flex-row gap-4 max-w-md mx-auto form-border">
+              <EmailSignup />
             </div>
           </div>
 
