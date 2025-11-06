@@ -1,9 +1,9 @@
 import React from 'react'
 import yt from '../assets/logo-youtube.svg'
-import fb from '../assets/logo-facebook.svg'
-import ig from '../assets/logo-instagram.svg'
-import tg from '../assets/logo-telegram.svg'
-import tt from '../assets/logo-tiktok.svg'
+import fb from '../assets/Logo_de_Facebook.png'
+import ig from '../assets/instagram-logo_971166-164497.avif'
+import tg from '../assets/icon-t.png'
+import tt from '../assets/tiktok-logo_1080029-103.avif'
 
 const Footer: React.FC = () => {
   return (

@@ -9,6 +9,7 @@ const Hero: React.FC = () => {
       className="min-h-screen relative overflow-hidden text-white"
       style={{
         backgroundImage: `url(${heroBg})`,
+        backgroundColor: '#1a0036',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
